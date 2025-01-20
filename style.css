@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand;
+}
+.main{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-container{
+  width: 62px;
+  height: 62px;
+}
+.logo-container > img{
+  width: 100%;
+}
+.main-logo-text{
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+} 
+.nav-links{
+  display: flex;
+  gap: 32px;
+}
+.nav-links li{
+  list-style: none;
+  font-size: 20px;
+}
+.nav-links a{
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.three-line{
+  /* display: none; */
+}
+/* mobile responsive code  */
+@media screen and (max-width: 576px) {
+  .main{
+    justify-content: space-between;
+    margin: 20px 20px;
+  }
+  .nav-ber, .navber-btn{
+    display: none;
+  }
+  .three-line a{
+    color: #000000;
+    font-size: 30px;
+  }
+  .main-logo-text{
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  .three-line a{
+    display: none;
+}
+}
