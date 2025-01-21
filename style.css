@@ -93,7 +93,7 @@ body{
 .banner-description{
   color: black;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 /* banner-btn style  */
@@ -106,6 +106,7 @@ body{
   font-size: 18px;
   letter-spacing: 1.2px;
   font-weight: bold;
+  cursor: wait;
 }
 /* banner img style  */
 .img-container{
@@ -118,7 +119,6 @@ body{
 /* //cureculum conti styel  */
 .curriculum{
   background-image: url("assets/bg.png");
-  height: 100px;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,8 +132,6 @@ body{
 }
 .parent-card-container{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   gap: 20px;
   width: 95%;
   margin: 0 auto;
@@ -184,25 +182,17 @@ background: linear-gradient(0deg, rgba(255,247,247,0.9720155625116258) 48%, rgba
   font-size: 18px;
   font-weight: bold;
 } 
-
-
-
-
-footer style 
+.story-section{
+  display: block;
+}
+/* footer style  */
 footer{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: #01ACFD;
-  justify-self: center;
-  align-self: center;
-}
-.footer-content{
-  
-} 
-.footer-img-container{
   display: flex;
-  align-items: center;
+  justify-content: space-around;
 }
+
+
+
 
 
 
