@@ -75,7 +75,7 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 40px;
+  margin: 0 auto;
 }
 .banner-container{
   width: 45%;
@@ -187,19 +187,69 @@ background: linear-gradient(0deg, rgba(255,247,247,0.9720155625116258) 48%, rgba
 }
 /* footer style  */
 footer{
-  display: flex;
-  justify-content: space-around;
+  color: white;
+  height: auto;
+  background-color: #01ACFD;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+.footer-main-card-container{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.footer-card-container{
+  width: 30%;
+  margin-top: 40px;
+}
+.footer-main-logo{
+  display: flex;
+  align-items: center;
+}
+.footer-main-img{
+  width: 80px;
+  height: 80px;
+}
+.footer-logo-title{
+  font-size: 30px;
+  margin: 0px;
+}
+.footer-fast-des{
+  margin-top: 30px;
+  line-height: 25px;
+  font-size: 20px;
+}
+.footer-common-title{
+  margin: 0;
+  margin-bottom: 20px;
+}
+.sec-card{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 24px;
+}
+.sec-card li{
+  list-style: none;
+}
+.sec-card a{
+  font-size: 20px;
+  color: white;
+  line-height: 40px;
+  font-weight: 300;
+  text-decoration: none;
 
-
-
-
-
-
-
-
-
-
+}
+.last-card{
+  font-size: 26px;
+}
+.footer-logo-img{
+  margin-top: 30px;
+}
+.footer-logo-img a{
+  text-decoration: none;
+  margin-right: 20px;
+}
 
 
 
@@ -251,4 +301,21 @@ footer{
   width: 90%;
   margin-bottom: 40px;
 }
+
+
+
+.footer-main-card-container{
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  gap: 0;
+}
+.footer-card-container{
+  width: 100%;
+}
+
+
+
+
+
 }
