@@ -30,6 +30,9 @@ body{
   color: black;
   text-transform: uppercase;
 } 
+.three-line a{
+  display: none;
+}
 /* nav styles  */
 .nav-links{
   display: flex;
@@ -51,7 +54,7 @@ body{
   color: rgb(0, 183, 255);
 }
 .color-3{
-  color: #04f2ff;
+  color: #8400ff;
 }
 .color-4{
   color: #5D58EF;
@@ -70,7 +73,7 @@ body{
 /* banner styles  */
 .banner{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 0 40px;
 }
@@ -98,7 +101,7 @@ body{
   background-color: black;
   border: none;
   border-radius: 12px;
-  padding: 10px 40px;
+  padding: 20px 40px;
   color: white;
   font-size: 18px;
   letter-spacing: 1.2px;
@@ -112,11 +115,110 @@ body{
 .img-container img{
   width: 100%;
 }
+/* //cureculum conti styel  */
+.curriculum{
+  background-image: url("assets/bg.png");
+  height: 100px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 70px auto;
+}
+.curriculum-container-top > h2{
+   text-align: center;
+   margin-bottom: 40px;
+   font-size: 40px;
+   font-weight: bold;
+}
+.parent-card-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 10px;
+  border-radius: 10px; 
+  text-align: center; 
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 400px;
+  margin-bottom: 30px;
+}
+.card-img{
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+.card-title{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.card-description{
+  margin-top: 0;
+  color: #808080;
+  font-size: 14px;
+  line-height: 25px;
+}
+.card-1{
+  background: rgb(255,242,242);
+  background: linear-gradient(0deg, rgba(255,242,242,0.9720155625116258) 48%, rgba(173,230,255,1) 100%);
+}
+.card-2{
+background: rgb(255,247,247);
+background: linear-gradient(0deg, rgba(255,247,247,0.9720155625116258) 48%, rgba(255,244,220,1) 100%);
+}
+.card-3{
+  background: rgb(250,244,244);
+  background: linear-gradient(0deg, rgba(250,244,244,0.9243965148925781) 40%, rgba(222,200,252,1) 100%);
+}
+.card-link{
+  margin-top: 20px;
+  color: #8700FF;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+} 
+
+
+
+
+footer style 
+footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #01ACFD;
+  justify-self: center;
+  align-self: center;
+}
+.footer-content{
+  
+} 
+.footer-img-container{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* mobile responsive code  */
 @media screen and (max-width: 576px) {
   .main{
-    justify-content: space-between;
     align-items: center;
+    width: 90%;
     margin: 0 auto;
     padding: 10px;
     border-bottom: 1px solid rgba(255, 166, 0, 0.753);
@@ -131,6 +233,9 @@ body{
   .main-logo-text{
     display: none;
   }
+  .three-line a{
+    display: block;
+}
   .banner{
     flex-direction: column-reverse;
     margin-top: 20px;
@@ -142,14 +247,18 @@ body{
     width: 95%;
     text-align: center;
   }
-}
+
 .img-container{
   width: auto;
   height: auto;
 }
-/* display none in mobile view  */
-@media screen and (min-width: 576px) {
-  .three-line a{
-    display: none;
+.parent-card-container{
+  flex-direction: column;
 }
-} 
+.card-container{
+  height: 420px;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 40px;
+}
+}
