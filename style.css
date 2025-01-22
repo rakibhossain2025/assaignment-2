@@ -239,7 +239,6 @@ background: linear-gradient(0deg, rgba(255,247,247,0.9720155625116258) 48%, rgba
 .card-main{
   border-radius: 10px;
   background-color: white;
-  height: 500px;
 }
 .main-story-des{
   padding-left: 20px;
