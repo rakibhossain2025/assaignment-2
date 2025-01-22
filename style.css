@@ -356,7 +356,6 @@ footer{
   line-height: 40px;
   font-weight: 300;
   text-decoration: none;
-
 }
 .last-card{
   font-size: 26px;
@@ -369,9 +368,19 @@ footer{
   margin-right: 20px;
 }
 
-
-
-
+/* marquee style */
+marquee{
+  font-size: 20px;
+  color: white;
+  background-color: #01ACFD;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  font-weight: 800;
+}
+.jamala-2{
+  margin: 0;
+}
 /* mobile responsive code  */
 @media screen and (max-width: 576px) {
   .main{
@@ -393,7 +402,7 @@ footer{
   }
   .three-line a{
     display: block;
-}
+ }
   .banner{
     flex-direction: column-reverse;
     margin-top: 20px;
@@ -405,49 +414,45 @@ footer{
     width: 90%;
     text-align: center;
   }
-
-.img-container{
+ .img-container{
   width: auto;
   height: auto;
-}
-.parent-card-container{
+ }
+ .parent-card-container{
   flex-direction: column;
-}
-.card-container{
+ }
+ .card-container{
   height: 420px;
   margin: 0 auto;
   width: 90%;
-  margin-bottom: 40px;
-}
-.display-none{
+ }
+ .display-none{
   display: none;
-}
-.jamala-container{
+ }
+ .jamala-container{
   grid-template-columns: repeat(1, 1fr);
-}
-.story-sec{
-  grid-template-columns: repeat(1, 1fr);
+ }
+ .story-sec{
   width: 95%;
   margin: 0 auto;
-  gap: 40px;
-}
-.story-sec h3{
-  font-size: 1.5em;
-}
-.footer-main-card-container{
+  gap: 20px;
+ }
+ .footer-main-card-container{
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
   gap: 0;
-}
-.footer-card-container{
+ }
+ .span-up-2{
+  margin: -20px 10px;
+ }
+ .sec-span{
+  font-size: 10px;
+ }
+ .footer-card-container{
   width: 100%;
-}
-.icon-container{
+ }
+ .icon-container{
   display: none;
-}
-
-
-
-
+ }
 }
