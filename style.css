@@ -181,14 +181,44 @@ background: linear-gradient(0deg, rgba(255,247,247,0.9720155625116258) 48%, rgba
   font-size: 18px;
   font-weight: bold;
 } 
-
+/* icon container  */
+.icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 10px;
+}
+.rotate{
+  rotate: 180deg;
+}
+.arrow-conti{
+  background-color: orange;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  /* text-align: center; */
+  display: flex;
+}
 /* dtory style  */
 .jamala{
   height: auto;
+  width: 100%;
   background: url("assets/bg.png"), linear-gradient(0deg, rgba(254, 161, 1, 0.411) 0%,  rgba(255,255,255,1) 100%);
   background-repeat: no-repeat;
   background-position: top;
   padding-bottom: 80px;
+  margin-top: 40px;
+}
+.jamala-title{
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
 }
 .jamala-container{
   display: grid;
@@ -372,7 +402,7 @@ footer{
   .banner-container-2{
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 95%;
+    width: 90%;
     text-align: center;
   }
 
@@ -389,9 +419,21 @@ footer{
   width: 90%;
   margin-bottom: 40px;
 }
-
-
-
+.display-none{
+  display: none;
+}
+.jamala-container{
+  grid-template-columns: repeat(1, 1fr);
+}
+.story-sec{
+  grid-template-columns: repeat(1, 1fr);
+  width: 95%;
+  margin: 0 auto;
+  gap: 40px;
+}
+.story-sec h3{
+  font-size: 1.5em;
+}
 .footer-main-card-container{
   flex-direction: column;
   width: 90%;
@@ -401,7 +443,9 @@ footer{
 .footer-card-container{
   width: 100%;
 }
-
+.icon-container{
+  display: none;
+}
 
 
 
